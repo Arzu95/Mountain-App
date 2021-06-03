@@ -13,6 +13,12 @@
 		1858FF88261FFB05004856DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1858FF87261FFB05004856DA /* Assets.xcassets */; };
 		1858FF8B261FFB05004856DA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1858FF8A261FFB05004856DA /* Preview Assets.xcassets */; };
 		1858FF8E261FFB05004856DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1858FF8C261FFB05004856DA /* LaunchScreen.storyboard */; };
+		1858FF9E261FFC44004856DA /* Gunung.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1858FF9D261FFC44004856DA /* Gunung.swift */; };
+		1858FFA1261FFC6A004856DA /* DummyGunung.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1858FFA0261FFC6A004856DA /* DummyGunung.swift */; };
+		1858FFA4261FFCCB004856DA /* GunungDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1858FFA3261FFCCB004856DA /* GunungDetail.swift */; };
+		1858FFAA261FFDB7004856DA /* GunungList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1858FFA9261FFDB7004856DA /* GunungList.swift */; };
+		1858FFAD261FFF7A004856DA /* GunungRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1858FFAC261FFF7A004856DA /* GunungRow.swift */; };
+		1858FFB1262010AB004856DA /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1858FFB0262010AB004856DA /* Profile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		1858FF8A261FFB05004856DA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1858FF8D261FFB05004856DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1858FF8F261FFB05004856DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1858FF9D261FFC44004856DA /* Gunung.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gunung.swift; sourceTree = "<group>"; };
+		1858FFA0261FFC6A004856DA /* DummyGunung.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyGunung.swift; sourceTree = "<group>"; };
+		1858FFA3261FFCCB004856DA /* GunungDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GunungDetail.swift; sourceTree = "<group>"; };
+		1858FFA9261FFDB7004856DA /* GunungList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GunungList.swift; sourceTree = "<group>"; };
+		1858FFAC261FFF7A004856DA /* GunungRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GunungRow.swift; sourceTree = "<group>"; };
+		1858FFB0262010AB004856DA /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +68,9 @@
 		1858FF80261FFB02004856DA /* Gunung */ = {
 			isa = PBXGroup;
 			children = (
-				1858FF81261FFB02004856DA /* AppDelegate.swift */,
-				1858FF83261FFB02004856DA /* SceneDelegate.swift */,
-				1858FF85261FFB02004856DA /* ContentView.swift */,
+				1858FF9C261FFB74004856DA /* Base */,
+				1858FF9B261FFB6E004856DA /* Model */,
+				1858FF9A261FFB53004856DA /* View */,
 				1858FF87261FFB05004856DA /* Assets.xcassets */,
 				1858FF8C261FFB05004856DA /* LaunchScreen.storyboard */,
 				1858FF8F261FFB05004856DA /* Info.plist */,
@@ -73,6 +85,36 @@
 				1858FF8A261FFB05004856DA /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1858FF9A261FFB53004856DA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1858FF85261FFB02004856DA /* ContentView.swift */,
+				1858FFA3261FFCCB004856DA /* GunungDetail.swift */,
+				1858FFA9261FFDB7004856DA /* GunungList.swift */,
+				1858FFAC261FFF7A004856DA /* GunungRow.swift */,
+				1858FFB0262010AB004856DA /* Profile.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1858FF9B261FFB6E004856DA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1858FF9D261FFC44004856DA /* Gunung.swift */,
+				1858FFA0261FFC6A004856DA /* DummyGunung.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1858FF9C261FFB74004856DA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				1858FF81261FFB02004856DA /* AppDelegate.swift */,
+				1858FF83261FFB02004856DA /* SceneDelegate.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +187,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1858FFAD261FFF7A004856DA /* GunungRow.swift in Sources */,
+				1858FFB1262010AB004856DA /* Profile.swift in Sources */,
+				1858FFA1261FFC6A004856DA /* DummyGunung.swift in Sources */,
 				1858FF82261FFB02004856DA /* AppDelegate.swift in Sources */,
+				1858FFAA261FFDB7004856DA /* GunungList.swift in Sources */,
 				1858FF84261FFB02004856DA /* SceneDelegate.swift in Sources */,
 				1858FF86261FFB02004856DA /* ContentView.swift in Sources */,
+				1858FFA4261FFCCB004856DA /* GunungDetail.swift in Sources */,
+				1858FF9E261FFC44004856DA /* Gunung.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
